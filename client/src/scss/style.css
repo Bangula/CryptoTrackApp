@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+body {
+  margin: 0;
+  padding: 0;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+#loader {
+  position: fixed;
+  top: 45%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  border: 8px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 8px solid #3498db;
+  width: 60px;
+  height: 60px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  -webkit-animation: spin 1.5s linear infinite;
+          animation: spin 1.5s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#header {
+  width: 100%;
+  height: 100px;
+  background: #181C21;
+}
+
+#header .container {
+  position: relative;
+}
+
+#header #bit_img {
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  width: 80px;
+  height: 80px;
+}
+
+#header #headline {
+  display: block;
+  text-align: center;
+  color: #ffa44f;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 100px;
+  margin: 0;
+}
+
+#table table {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 60px;
+}
+
+#table .cryptoName {
+  color: #00695c;
+  text-decoration: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  font-weight: bold;
+}
+
+#table .cryptoName:hover {
+  color: #000000;
+}
+
+#table thead th {
+  border-bottom: 1px solid #43a089;
+  padding-bottom: 12px;
+  font-family: 'Open Sans', sans-serif;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+#table tbody tr {
+  padding: 25px 0;
+  font-family: 'Montserrat', sans-serif;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 12px;
+}
+
+#table tbody tr:nth-child(2n) {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+#table h3 {
+  width: 100%;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  color: rgba(0, 0, 0, 0.7);
+  margin-top: 60px;
+}
+
+#table .blue {
+  color: blue;
+}
+
+#table .red {
+  color: red;
+}
+
+#table form input {
+  width: 116px;
+}
+
+#table form button {
+  width: 120px;
+  margin-top: 5px;
+  border: 0;
+  background: #43a089;
+  padding: 4px 0;
+  color: #fff;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#table form button:hover {
+  color: #43a089;
+  background: #fff;
+}
+
+#table form button:disabled {
+  color: rgba(0, 0, 0, 0.4);
+  background: #43a089;
+  cursor: text;
+}
+
+#table .pagination {
+  width: 100%;
+  text-align: center;
+  margin-top: 40px;
+}
+
+#table .pagination span {
+  display: inline-block;
+  padding: 0 8px;
+  color: #2856a0;
+  cursor: pointer;
+  border-right: 1px solid #2856a0;
+}
+
+#table .pagination span:last-child {
+  border-right: none;
+}
+
+#descript {
+  padding-top: 100px;
+  font-family: 'Open Sans', sans-serif;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+#descript .back_to_table {
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+  text-align: center;
+  color: #1675ce;
+  text-decoration: none;
+  opacity: 0.7;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+#descript .back_to_table:hover {
+  opacity: 1;
+}
+
+#descript .content {
+  width: 40%;
+  margin: 0 auto;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin-top: 50px;
+  padding: 40px 20px;
+  -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+#descript .img_logo {
+  text-align: center;
+}
+
+#descript .img_logo img {
+  width: 60px;
+  margin: 0 auto;
+}
+
+#descript .img_logo h4 {
+  text-align: center;
+}
+
+#descript h3 {
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+}
+
+#descript p {
+  font-size: 14px;
+}
+
+#descript span {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#err {
+  text-align: center;
+}
+
+#err h1 {
+  text-align: center;
+  margin-top: 10%;
+}
+/*# sourceMappingURL=style.css.map */
