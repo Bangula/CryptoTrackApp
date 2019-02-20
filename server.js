@@ -1,6 +1,8 @@
 const fetch = require('node-fetch');
 const express = require('express');
-var cors = require('cors');
+const cors = require('cors');
+const path = requre('path');
+
 
 const app = express();
 app.use(cors());
@@ -28,6 +30,17 @@ app.get('/info/:symbol', (req, res) => {
       .catch(err => console.log(err))
 })
 
-app.listen(3005, () => {
+//Serve static assets
+if(process.env.NODE_ENV === 'production'){
+    app.use(express.static('client/build'));
+
+    app.get('*', (req, res) => {
+        res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
+    })
+}
+
+const port = process.env.PORT || 3000;
+
+app.listen(port, () => {
     console.log('Server is running on port 3005');
 });
