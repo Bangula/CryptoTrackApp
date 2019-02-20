@@ -1,7 +1,7 @@
 const fetch = require('node-fetch');
 const express = require('express');
 const cors = require('cors');
-const path = requre('path');
+const path = require('path');
 
 
 const app = express();
@@ -39,8 +39,8 @@ if(process.env.NODE_ENV === 'production'){
     })
 }
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3005;
 
 app.listen(port, () => {
-    console.log('Server is running on port 3005');
+    console.log('Server is running on port: ' + port);
 });
